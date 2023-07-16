@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+</head>
+<body>
+<h1 id="heading"> REGISTER PAGE</h1>
+  <form method="POST">
+        <p class="input">
+            <label  for="username" >USERNAME</label>
+            <input type="text" id="username" name="username" required >
+        </p >
+
+        <p class="input">
+            <label for="password" >PASSWORD</label>
+            <input type="text" id="password" name="password" required >
+        </p>
+
+        <P class="submit">
+            <input  class="submitbutton" type="submit" value="REGISTER">
+        </P>
+   </form>
+<p class="login">
+      <a href="/login"> <button class="loginbutton" id="login"> Already have a account ? Log In </button> </a>
+</p>
+<p class="warning">
+          {{register_text}}
+      </p>
+
+</body>
+
+<style>
+      * {
+        padding: 0;
+        margin: 0;
+    }
+       h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .input {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+      .submit {
+          margin-left: 47%;
+          margin-top: 50px;
+      }
+
+       .submitbutton {
+         width: 100px;
+         height: 50px;
+         background-color: lightblue;
+         color: white;
+           text-align: center;
+     }
+
+     .submitbutton:hover {
+         cursor: pointer;
+         background-color: darkblue;
+     }
+
+
+      .loginbutton {
+         background-color: red;
+         color: white;
+          padding: 10px;
+
+     }
+
+     .loginbutton:hover {
+         cursor: pointer;
+         background-color: darkblue;
+
+     }
+
+     .login {
+         text-align: center;
+         margin-top: 50px;
+     }
+
+      .warning {
+         color: red;
+         text-align: center;
+         font-size: 30px;
+     }
+
+
+</style>
+
+</body>
+</html>

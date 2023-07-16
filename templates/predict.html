@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Eligibity </title>
+</head>
+<body>
+
+   <h2> Check your loan Eligibility</h2>
+   <h3>Enter the below details</h3>
+   <form method="post">
+       <p class="details">
+       <label for="gender" >Gender</label>
+       <select name="gender" id="gender" required="required">
+           <option value="0" >Female</option>
+           <option value="1" >Male</option>
+       </select>
+       </p>
+       <p class="details">
+       <label for="married">Marital status </label>
+       <select name="married" id="married" required="required">
+           <option value="0" >No</option>
+           <option value="1" >Yes</option>
+       </select>
+       </p>
+       <p class="details">
+       <label for="dependents">Dependents </label>
+        <input type="number" id="dependents" name="dependents" required="required">
+       </p>
+       <p class="details">
+       <label for="education">Education </label>
+       <select name="education" id="education" required="required">
+           <option value="0" >Graduate</option>
+           <option value="1" >Not Graduate</option>
+       </select>
+       </p>
+        <p class="details">
+       <label for="employment">self_Employment </label>
+       <select name="employment" id="employment" required="required">
+           <option value="0" >No</option>
+           <option value="1" >Yes</option>
+       </select>
+       </p>
+       <p class="details">
+       <label for="applicantincome">Applicant Income ($) </label>
+        <input type="number" id="applicantincome" name="applicantincome" required="required">
+       </p>
+       <p class="details">
+       <label for="coapplicantincome">CoApplicant Income ($) </label>
+        <input type="number" id="coapplicantincome" name="coapplicantincome" required="required">
+       </p>
+       <p class="details">
+       <label for="loan">Loan amount in thousands ($) </label>
+        <input type="number" id="loan" name="loan" required="required">
+       </p>
+
+       <p class="details">
+       <label for="term">Loan Term (months) </label>
+        <input type="number" id="term" name="term" required="required">
+       </p>
+
+        <p class="details">
+       <label for="history">Credit History </label>
+       <select name="history" id="history" required="required">
+           <option value="0" >No</option>
+           <option value="1" >Yes</option>
+       </select>
+       </p>
+
+        <p class="details">
+       <label for="area">Property Area </label>
+       <select name="area" id="area" required="required">
+           <option value="0" >Rural</option>
+           <option value="1" >Semi-Urban</option>
+           <option value="2" >Urban</option>
+       </select>
+       </p>
+
+       <P class="button">
+            <input  class="submit" type="submit" value="SUBMIT">
+        </P>
+
+
+   </form>
+
+<p class="logout">
+      <a href="/login"> <button class="logoubutton" id="login"> Press Here to Logout </button> </a>
+</p>
+<p class="result">
+          {{register_text}}
+      </p>
+
+
+</body>
+</html>
